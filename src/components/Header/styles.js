@@ -45,10 +45,13 @@ export const User = styled.div`
       white-space: nowrap;
     }
 
-    a{
+    button{
       color: ${({ theme }) => theme.COLORS.GRAY_300};
       font-family: "Roboto Slab";
       font-size: 14px;
+
+      background:transparent;
+      border: none;
     }
   }
    img{
