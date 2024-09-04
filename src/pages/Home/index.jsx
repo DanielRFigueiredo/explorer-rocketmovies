@@ -3,9 +3,11 @@ import Card from '../../components/Card'
 import { Header } from '../../components/Header'
 import { Container, Content } from './styles'
 import { FiPlus } from 'react-icons/fi'
+import { useUser } from '../../hooks/useUser'
 
 export function Home() {
-
+  const { user } = useUser()
+  console.log(user)
 
   return (
     <Container>

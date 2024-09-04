@@ -8,12 +8,16 @@ import GlobalStyles from './styles/GlobalStyles'
 
 import { Routes } from './routes'
 
+import UserProvider from './hooks/useUser'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Routes />
+      <UserProvider>
+        <GlobalStyles />
+        <Routes />
+      </UserProvider>
     </ThemeProvider>
   </StrictMode>,
 )
