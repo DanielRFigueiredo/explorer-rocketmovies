@@ -35,7 +35,7 @@ margin-top: 40px;
   }
 `
 
-export const Marcadores = styled.div`
+export const Markers = styled.div`
   margin-top: 40px;
   >h3{
     color: var(--Gray, #999591);

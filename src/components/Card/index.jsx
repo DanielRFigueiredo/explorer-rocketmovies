@@ -4,11 +4,11 @@ import { createStars } from './createStars'
 import { Tag } from '../Tag'
 import { Link } from 'react-router-dom'
 
-export default function Card({ children, title, nota = 0, tags }) {
+export default function Card({ children, title, nota = 0, tags, id }) {
   const stars = createStars(nota)
   return (
     <Container>
-      <Link to="/preview"><h2>{title}</h2></Link>
+      <Link to={`/preview/${id}`}><h2>{title}</h2></Link>
       <div>
         {stars.map((star, index) => (
           <span key={index}>
@@ -20,7 +20,7 @@ export default function Card({ children, title, nota = 0, tags }) {
       </div>
       {children}
       <div>
-        {tags.map((tag, index) => <Tag key={index} title={tag} />)}
+        {tags.map(tag => <Tag key={tag.id} title={tag.name} />)}
       </div>
     </Container>
   )
