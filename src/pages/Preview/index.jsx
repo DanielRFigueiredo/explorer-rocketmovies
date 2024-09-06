@@ -60,7 +60,7 @@ export function Preview() {
             </Title>
             <Infos>
               <img src={avatarURL} alt="imagem do usuario" />
-              <span>Por Daniel Figueiredo</span>
+              <span>Por {user.name}</span>
               <LuClock3 />
               <span>{date}</span>
             </Infos>

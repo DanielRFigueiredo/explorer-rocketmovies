@@ -24,7 +24,7 @@ export function Header() {
         />
         <User>
           <div>
-            <Link to="/profile"> <h2>Daniel Figueiredo</h2></Link>
+            <Link to="/profile"> <h2>{user.name}</h2></Link>
             <button onClick={signOut}>sair</button>
           </div>
           <Link to="/profile"> <img src={avatarURL} alt="foto do usuário" /></Link>
